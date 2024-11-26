@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-[#ECF2F8]">
+    <div>
+      <div class="min-h-screen flex items-center justify-center p-4">
+        <div
+          class="max-w-[730px] mx-auto bg-white rounded-2xl overflow-hidden shadow-[0_40px_40px_-10px_rgba(201,213,225,0.503106)]"
+        >
+          <div class="flex flex-col md:flex-row">
+            <!-- Imagen ajustada para mantener la proporción correcta -->
+            <div class="md:w-[285px] h-[300px]">
+              <img
+                src="images/drawers.jpg"
+                alt="Green dresser with dried flowers"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Contenido de texto con espaciado ajustado -->
+            <div class="p-8 md:p-10 md:pt-8 md:w-[445px]">
+              <h2
+                class="text-[20px] font-bold text-[#48556A] leading-[1.4] mb-3"
+              >
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </h2>
+
+              <p class="text-[14px] text-[#6E8098] leading-[1.6] mb-6">
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I've got some simple tips
+                to help you make any room feel complete.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                  <img
+                    src="images/avatar-michelle.jpg"
+                    alt="Michelle Appleton"
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <p class="text-[13px] font-bold text-[#48556A]">
+                      Michelle Appleton
+                    </p>
+                    <p class="text-[13px] text-[#9DAEC2]">28 Jun 2020</p>
+                  </div>
+                </div>
+
+                <button
+                  class="w-8 h-8 rounded-full bg-[#ECF2F8] flex items-center justify-center hover:bg-[#6E8098] group transition-colors"
+                  aria-label="Share article"
+                >
+                  <img
+                    src="images/icon-share.svg"
+                    alt="Share"
+                    class="w-4 h-4 group-hover:brightness-200"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">0xblu</a>.
+      </div>
+    </div>
+  </body>
+</html>
